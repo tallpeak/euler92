@@ -1,1 +1,1 @@
-Solutions to Project Euler # 92 in 7 languages
+Solutions to Project Euler # 92 in 11 languages
