@@ -20,9 +20,8 @@ function nc(n)
         return n > 1
     end 
 end
-#cache = Array{Bool}(missing,999)
 function makecache()
-    global cache = BitArray([ nc(i) for i in 0:Lc+1 ])
+    global cache = BitArray([ nc(i) for i in 1:Lc+1 ])
 end
 makecache()
 function answer(n::Int64)
