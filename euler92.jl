@@ -21,7 +21,7 @@ function nc(n)
     end 
 end
 function makecache()
-    global cache = BitArray([ nc(i) for i in 1:Lc+1 ])
+    global cache = BitArray([ nc(i) for i in 1:cachelen+1 ])
 end
 makecache()
 function answer(n::Int64)
