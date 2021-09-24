@@ -1,6 +1,4 @@
-package com.company;
-
-public class Main {
+public class euler92 {
 
     static int square(int x) {
         return x*x;
@@ -53,13 +51,13 @@ public class Main {
         init();
         long endTime = System.nanoTime();
         long elapsed = (endTime - startTime);  //divide by 1000000 to get milliseconds.
-        System.out.println(String.format("elapsed={0}" , elapsed));
+        System.out.println(String.format("elapsed=%.3f ms" , elapsed * 1E-6));
         startTime = System.nanoTime();
         System.out.println("Calculating # of sumsquaredigits terminating in 89 from 1 to 10,000,000...");
         System.out.println(countT89(N));
         endTime = System.nanoTime();
         elapsed = (endTime - startTime);  //divide by 1000000 to get milliseconds.
-        System.out.println(String.format("elapsed={0}" , elapsed));
+        System.out.println(String.format("elapsed=%.3f ms" , elapsed * 1E-6));
         System.out.println("Press Enter to continue");
         try {
             System.in.read();
